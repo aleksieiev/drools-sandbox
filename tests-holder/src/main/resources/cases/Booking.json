@@ -1,0 +1,10 @@
+{
+  "cases": [
+    {
+      "conditions": {
+        "name": "Check Booking service availability",
+        "URL": "https://fat.unicorn"
+      }
+    }
+  ]
+}

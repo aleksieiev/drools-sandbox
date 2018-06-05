@@ -1,0 +1,6 @@
+group 'sandbox.example.drools'
+version '1.0-SNAPSHOT'
+
+dependencies {
+    compile project(":drools-model")
+}

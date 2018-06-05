@@ -1,0 +1,7 @@
+rootProject.name = 'drools'
+
+include 'drools-core'
+include 'drools-model'
+include 'drools-common'
+include 'drools-model'
+include 'tests-holder'

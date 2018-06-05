@@ -1,0 +1,14 @@
+plugins {
+    id 'groovy'
+}
+
+group 'sandbox.example.drools'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:$gradleVersion"
+}

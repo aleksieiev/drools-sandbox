@@ -1,0 +1,16 @@
+plugins {
+    id 'groovy'
+}
+
+version 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(":drools-model")
+    compile project(":drools-core")
+
+    compile "org.freemarker:freemarker:$freemarkerVersion"
+}
