@@ -3,7 +3,7 @@ package sandbox.example.drools.service
 import freemarker.template.Template
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
-import sandbox.example.drools.BasicScenario
+import sandbox.example.drools.model.BasicScenario
 import sandbox.example.drools.util.FileUtils
 import sandbox.example.drools.util.GlobalProperties
 

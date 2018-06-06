@@ -19,7 +19,9 @@ class StoryGeneratorService {
     void generate() {
         def scenarios = scenarioReader.getScenarios()
         LOGGER.debug("Received ${scenarios.size()} scenarios")
-        scenarios.stream().forEach({ kieSession.execute(it) })
+        scenarios.forEach({
+            kieSession.execute(it)
+        })
         scenarioWriter.saveStories(scenarios)
     }
 }

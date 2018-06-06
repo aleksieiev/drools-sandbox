@@ -1,7 +1,10 @@
 rootProject.name = 'drools'
 
-include 'drools-core'
-include 'drools-model'
-include 'drools-common'
-include 'drools-model'
+include 'drools:drools-core'
+include 'drools:drools-model'
+include 'drools:drools-common'
+include 'drools:drools-model'
+include 'drools:drools-booking'
+
 include 'tests-holder'
+

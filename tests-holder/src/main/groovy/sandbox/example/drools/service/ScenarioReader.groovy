@@ -4,7 +4,7 @@ import groovy.json.JsonSlurper
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver
 import org.springframework.stereotype.Service
-import sandbox.example.drools.BasicScenario
+import sandbox.example.drools.model.BasicScenario
 import sandbox.example.drools.util.GlobalProperties
 
 import java.util.stream.Collectors

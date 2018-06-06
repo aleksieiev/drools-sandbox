@@ -2,8 +2,18 @@
   "cases": [
     {
       "conditions": {
-        "name": "Check Booking service availability",
-        "URL": "https://fat.unicorn"
+        "name": "Check Booking service availability with random data",
+        "url": "https://fat.unicorn",
+        "user": "Random Man",
+        "order type": "all random fields"
+      }
+    },
+    {
+      "conditions": {
+        "name": "Check Booking service availability with USA user",
+        "url": "https://fat.unicorn",
+        "user": "Mr. Lebovski",
+        "order type": "Lebowski order"
       }
     }
   ]
