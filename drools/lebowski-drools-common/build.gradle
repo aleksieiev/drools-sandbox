@@ -1,0 +1,17 @@
+plugins {
+    id 'groovy'
+}
+
+group 'sandbox.example.drools'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(":drools:lebowski-drools-model")
+    compile project(":drools:lebowski-drools-booking")
+
+    compile "org.apache.commons:commons-lang3:$apacheCommonLang3Version"
+}

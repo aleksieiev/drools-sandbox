@@ -57,4 +57,11 @@ project(":tests-holder") {
     }
 
     mainClassName = 'sandbox.example.drools.Main'
+
+    bootRun {
+        if ( project.hasProperty('jvmArgs') ) {
+            jvmArgs = (project.jvmArgs.split("\\s+") as List)
+
+        }
+    }
 }
