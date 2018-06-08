@@ -10,11 +10,15 @@ allprojects {
     version '1.0-SNAPSHOT'
 
     dependencies {
-        testCompile "junit:junit"
+        testCompile "junit:junit:$junitVersion"
         compile "org.codehaus.groovy:groovy-all:$groovyVersion"
         compile "org.springframework.boot:spring-boot-starter:$springBootVersion"
         compile "org.drools:drools-decisiontables:$droolsVersion"
         compile "org.kie:kie-api:$droolsVersion"
+        compile("org.kie:kie-spring:$droolsVersion") {
+            // Sadly kie-spring depends upon spring 3.2, but we need 4x to run smoothly with spring boot
+            exclude group: "org.springframework"
+        }
 
     }
 }

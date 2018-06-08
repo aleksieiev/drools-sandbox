@@ -1,10 +1,10 @@
 rootProject.name = 'drools'
 
-include 'drools:drools-core'
-include 'drools:drools-model'
-include 'drools:drools-common'
-include 'drools:drools-model'
-include 'drools:drools-booking'
+include 'drools:lebowski-drools-core'
+include 'drools:lebowski-drools-model'
+include 'drools:lebowski-drools-common'
+include 'drools:lebowski-drools-model'
+include 'drools:lebowski-drools-booking'
 
 include 'tests-holder'
 

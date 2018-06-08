@@ -9,8 +9,8 @@ repositories {
 }
 
 dependencies {
-    compile project(":drools:drools-model")
-    compile project(":drools:drools-core")
+    compile project(":drools:lebowski-drools-model")
+    compile project(":drools:lebowski-drools-core")
 
     compile "org.freemarker:freemarker:$freemarkerVersion"
 }

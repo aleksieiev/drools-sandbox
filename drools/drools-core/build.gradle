@@ -1,7 +1,0 @@
-group 'sandbox.example.drools'
-version '1.0-SNAPSHOT'
-
-dependencies {
-    compile project(":drools:drools-model")
-    compile project(":drools:drools-common")
-}
