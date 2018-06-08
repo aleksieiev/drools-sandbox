@@ -39,22 +39,8 @@ buildscript {
 apply plugin: 'io.spring.dependency-management'
 
 project(":tests-holder") {
-    buildscript {
-        repositories {
-            maven {
-                url "https://plugins.gradle.org/m2/"
-            }
-        }
-        dependencies {
-            classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
-        }
-    }
 
     apply plugin: 'org.springframework.boot'
-
-    jar {
-        enabled = true
-    }
 
     mainClassName = 'sandbox.example.drools.Main'
 

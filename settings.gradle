@@ -1,4 +1,4 @@
-rootProject.name = 'drools'
+rootProject.name = 'drools-sandbox'
 
 include 'drools:lebowski-drools-core'
 include 'drools:lebowski-drools-model'
