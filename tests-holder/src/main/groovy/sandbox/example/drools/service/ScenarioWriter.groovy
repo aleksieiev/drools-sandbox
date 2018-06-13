@@ -7,6 +7,9 @@ import sandbox.example.drools.model.BasicScenario
 import sandbox.example.drools.util.FileUtils
 import sandbox.example.drools.util.GlobalProperties
 
+/**
+ * Class represents abstraction for any write operations for test scenarios.
+ */
 @Service
 class ScenarioWriter {
     @Autowired

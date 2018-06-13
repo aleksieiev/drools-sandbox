@@ -10,6 +10,9 @@ import sandbox.example.drools.util.GlobalProperties
 import java.util.stream.Collectors
 import java.util.stream.Stream
 
+/**
+ * Class represents abstraction for any read operations for test scenarios.
+ */
 @Service
 class ScenarioReader {
     @Autowired

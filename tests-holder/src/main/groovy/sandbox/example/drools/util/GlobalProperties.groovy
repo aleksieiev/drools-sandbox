@@ -2,6 +2,9 @@ package sandbox.example.drools.util
 
 import org.springframework.stereotype.Component
 
+/**
+ * Class is responsible for all configuration properties which has bess passed via command line arguments or system properties.
+ */
 @Component
 class GlobalProperties {
     public static final String PROPERTIES_PREFIX = "qaa"
@@ -10,6 +13,7 @@ class GlobalProperties {
     private Properties qaProperties = new Properties()
 
     GlobalProperties() {
+        System.getenv()
         System.getProperties().findAll { it.key.toString().startsWith PROPERTIES_PREFIX }.each {
             this.qaProperties.put(it.key.toString(), it.value.toString())
         }

@@ -6,6 +6,9 @@ import org.kie.api.runtime.StatelessKieSession
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
+/**
+ * Class represents abstraction for story generation.
+ */
 @Service
 class StoryGeneratorService {
     private static final Log LOGGER = LogFactory.getLog(StoryGeneratorService)
@@ -18,7 +21,7 @@ class StoryGeneratorService {
 
     void generate() {
         def scenarios = scenarioReader.getScenarios()
-        LOGGER.debug("Received ${scenarios.size()} scenarios")
+        LOGGER.debug("Received [${scenarios.size()}] scenarios")
         scenarios.forEach({
             kieSession.execute(it)
         })

@@ -8,6 +8,9 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import sandbox.example.drools.service.StoryGeneratorService
 
+/**
+ * Main Spring Boot runner
+ */
 @SpringBootApplication
 @EnableAutoConfiguration
 class Main implements ApplicationRunner {
