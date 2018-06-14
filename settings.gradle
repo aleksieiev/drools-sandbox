@@ -5,6 +5,7 @@ include 'drools:lebowski-drools-model'
 include 'drools:lebowski-drools-common'
 include 'drools:lebowski-drools-model'
 include 'drools:lebowski-drools-booking'
+include 'drools:lebowski-drools-delivery'
 
 include 'tests-holder'
 

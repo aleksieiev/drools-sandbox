@@ -11,8 +11,4 @@ repositories {
 
 dependencies {
     compile project(":drools:lebowski-drools-model")
-    compile project(":drools:lebowski-drools-booking")
-    compile project(":drools:lebowski-drools-delivery")
-
-    compile "org.apache.commons:commons-lang3:$apacheCommonLang3Version"
 }

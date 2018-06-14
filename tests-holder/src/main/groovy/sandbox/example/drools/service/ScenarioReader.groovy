@@ -28,7 +28,7 @@ class ScenarioReader {
 
     protected List<BasicScenario> getScenarios(final String serviceName) {
         Stream.of(serviceName)
-                .map({ pathResolver.getResource("classpath:cases/Booking.json") })
+                .map({ pathResolver.getResource("classpath:cases/${serviceName}.json") })
                 .filter({ it.exists() })
                 .map({ (List) jsonSlurper.parse((InputStream) it.inputStream).cases })
                 .findAny().orElse(Collections.emptyList())

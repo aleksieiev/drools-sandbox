@@ -1,0 +1,20 @@
+{
+  "cases": [
+    {
+      "conditions": {
+        "name": "Lebowski requires a new rug for his room",
+        "url": "https://rug.shop",
+        "order type": "rug",
+        "destination": "Lebowski house"
+      }
+    },
+    {
+      "conditions": {
+        "name": "Money delivering to the abductors",
+        "url": "https://angry.duck",
+        "order type": "money",
+        "destination": "Simi Valley road"
+      }
+    }
+  ]
+}
