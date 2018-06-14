@@ -1,5 +1,7 @@
 package sandbox.example.drools
 
+import org.drools.compiler.kie.builder.impl.KieBuilderImpl
+import org.drools.compiler.kie.builder.impl.MemoryKieModule
 import org.kie.api.KieBase
 import org.kie.api.KieServices
 import org.kie.api.builder.*
@@ -34,16 +36,16 @@ class DroolsAutoConfiguration {
     KieContainer kieContainer() throws IOException {
         final KieRepository kieRepository = getKieServices().getRepository()
 
-        kieRepository.addKieModule(new KieModule() {
+        kieRepository.addKieModule(new MemoryKieModule() {
             ReleaseId getReleaseId() {
                 return kieRepository.getDefaultReleaseId()
             }
         })
 
-        KieBuilder kieBuilder = getKieServices().newKieBuilder(kieFileSystem())
+        KieBuilderImpl kieBuilder = getKieServices().newKieBuilder(kieFileSystem())
         kieBuilder.buildAll()
 
-        return getKieServices().newKieContainer(kieRepository.getDefaultReleaseId())
+        return getKieServices().newKieContainer(kieBuilder.getKieModule().releaseId)
     }
 
     private KieServices getKieServices() {
